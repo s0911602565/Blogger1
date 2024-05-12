@@ -19,15 +19,16 @@
 
  
 ## 使用到的技術
-| 技術 | 說明 |
-| --- | --- | 
-| SpringBoot | Web應用開發 | 
-| Hibernate	 | ORM框架 | 
-| Spring Validation | 資料驗證 | 
-| Quartz | 任務排程 | 
-| Css | 前端框架 | 
-| VueJs | 前端框架 | 
-| Redis | 記憶體資料存放區 | 
+| 技術                | 說明       |
+|-------------------|----------| 
+| SpringBoot        | Web應用開發  | 
+| Hibernate	        | ORM框架    | 
+| MySQL	            | 資料庫      | 
+| Spring Validation | 資料驗證     | 
+| Quartz            | 任務排程     | 
+| Css               | 前端框架     | 
+| VueJs             | 前端框架     | 
+| Redis             | 記憶體資料存放區 | 
 
 ## 系統架構
 			 
