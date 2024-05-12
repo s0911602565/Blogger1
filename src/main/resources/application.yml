@@ -1,0 +1,31 @@
+sql1:
+  username1: "root"
+  password1: "12345678"
+
+mail:
+  googleAccount: "s0911602565@gmail.com"
+  googlePass: "DSFGL@$AS1FS#"
+
+spring:
+  application:
+    name: 部落格Blogger
+  mvc:
+    view: {prefix: /WEB-INF/jsp/ , suffix: .jsp}
+  main:
+    banner-mode: off #console icon
+  profiles:
+    active: dev,prod #logback-spring.xml
+  datasource:
+    url: jdbc:mysql://localhost:3306/board?serverTimezone=UTC&useSSL=false
+    username: ${sql1.username1}
+    password: ${sql1.password1}
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # xx_Id -> xxId
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
