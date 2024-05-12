@@ -8,7 +8,7 @@
         <tr>
 
             <td align="right" style="padding-bottom:.2em">
-                <a href="/signUpExecute" title="新增blogger" style="margin-left:.5em"><img src="../../images/yellow/post.png" id="td_post" /> </a>
+                <a href="/signUpExecute/createInfo" title="新增blogger" style="margin-left:.5em"><img src="../../images/yellow/post.png" id="td_post" /> </a>
             </td>
         </tr>
     </table>

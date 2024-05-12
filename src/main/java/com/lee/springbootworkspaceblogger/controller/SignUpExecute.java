@@ -58,13 +58,20 @@ public class SignUpExecute {
         forumInfoRepository.save(forumInfo);
         request.getSession().setAttribute("user", forumInfo.getUser());
         request.getSession().setAttribute("userID", forumInfo.getId());
-        iMailService.sendEmail("s098002040@gmail.com", "註冊通知", "恭喜您註冊部落格");
+        //iMailService.sendEmail("s098002040@gmail.com", "註冊通知", "恭喜您註冊部落格");
 
+
+        model.setViewName("redirect:/signUpExecute/createInfo");
+        return model;
+
+    }
+
+    @ApiOperation("開新版頁")
+    @RequestMapping("createInfo")
+    public ModelAndView createInfo(ModelAndView model){
         List<Category> listCategory = categoryRepository.findAll();
         model.addObject("listCategory", listCategory);
         model.setViewName("/createCategory");
-
         return model;
-
     }
 }
