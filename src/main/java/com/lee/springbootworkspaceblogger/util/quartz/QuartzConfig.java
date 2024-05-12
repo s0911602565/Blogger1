@@ -22,7 +22,7 @@ public class QuartzConfig {
     public Trigger showTimeTrigger() {
         System.out.println("showTimeTrigger方法");
         CronScheduleBuilder cronScheduleBuilder =
-                CronScheduleBuilder.cronSchedule("0/5 * * * * ? ");//每5秒執行一次
+                CronScheduleBuilder.cronSchedule("1 * * * * ? ");//每1分鐘執行一次
         return TriggerBuilder.newTrigger()
                 .forJob(showTime())
                 .withIdentity("redisUpdateTrigger")
