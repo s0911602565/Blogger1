@@ -15,7 +15,7 @@ public class TestConn {
     @Autowired
     CategoryRepository categoryRepository;
     @Test
-    public void doTest(){
+    public void doTest(){ 
         Category category = categoryRepository.findById(1).get();
         System.out.println(category.getId());
         List<Boards> boards = category.getBoards();
